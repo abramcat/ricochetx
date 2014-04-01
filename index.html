@@ -13,14 +13,23 @@
 		<!-- Plugin's Assets -->
 		<link rel="stylesheet" href="jquery.touchpanview.css">
 		<script src="jquery.touchpanview.js"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			
+			
+			/**
+			 * Simple implementation with less possible configuration
+			 */
+			$('#myImage').touchPanView({
+					width: 				1000,
+					height: 			600
+			});
+});
+
 </head>
 <body>
 <img id="myImage" src="SFNightPano2.jpg" alt="city pano (c) All Rights Reserved"/>
 
 <!-- <script type="text/javascript" src="retina.js"></script> -->
-$('#myImage').touchPanView({
-	width: 1000,
-	height: 600
-});
 </body>
 </html>
